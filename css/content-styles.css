@@ -1,0 +1,37 @@
+.jumbotron {
+	background-color: #644a8d;
+	min-height: 100vh;
+	color: white;
+	margin-bottom: 0;
+}
+
+.jumbotron h2 {
+	text-align: center;
+
+}
+
+.logo {
+	margin-bottom: 30px;
+}
+
+.jumbotron .powered-by {
+	font-size: 12px;
+}
+
+.powered-by {
+	position: absolute;
+	top: 0;
+	right: 1%;
+}
+
+#power {
+	position: relative;
+	top: 5px;
+}
+
+#reddit-logo {
+	height: 27px;
+	width: 60px;
+}
+
+
