@@ -34,4 +34,17 @@
 	width: 60px;
 }
 
+.more-content {
+	background-color: #ffc107;
+	color: white;
+	border: 0;
+
+}
+
+.more-row {
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+}
+
 
