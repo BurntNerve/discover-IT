@@ -1,7 +1,6 @@
 .jumbotron {
 	background-color: #644a8d;
-	min-height: 100vh;
-	color: white;
+	min-height: 50vh;
 	margin-bottom: 0;
 }
 
@@ -10,9 +9,44 @@
 
 }
 
-.logo {
-	margin-bottom: 30px;
+.section-title {
+	text-align: left;
+	display: block;
+	border-bottom: 1px solid white;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	
 }
+
+.logo-box {
+	height: 50px;
+	width: 170px;
+	background-color: white;
+	margin: 0 auto;
+	color: #644a8d;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.logo {
+	position: relative;
+	top: 10px;
+}
+
+.glow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.pop:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.perm-pop {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
 
 .jumbotron .powered-by {
 	font-size: 12px;
@@ -32,6 +66,11 @@
 #reddit-logo {
 	height: 27px;
 	width: 60px;
+}
+
+#content-link:hover, .subreddit-link:hover {
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .more-content {
