@@ -32,6 +32,10 @@
     margin-bottom: 20px;
 }
 
+.logo-box a {
+    color: #644a8d;
+}
+
 .logo {
 
     position: relative;
@@ -99,10 +103,10 @@
 #submit-text {
     color: white;
     background-color: #644a8d;
-    font-size: 30px;
+    font-size: 18px;
     width: 300px;
     border: 0;
-    outline: 0;
+    outline: 0 !important;
     border-bottom: 1px solid white;
     display: block;
     margin: 0 auto;
