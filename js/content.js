@@ -97,7 +97,7 @@ function handleInterestED() {
             template.find(".subreddit-link" + j).text("By u/" + prefix.children[j - 1].data.author);
             template.find(".subreddit-link" + j).attr("href", "https://reddit.com/user/" + prefix.children[j - 1].data.author);
 
-            if (prefix.children[j - 1].data.post_hint === "link" || prefix.children[j - 1].data.post_hint === undefined || prefix.children[j - 1].data.post_hint === "self") {
+            if (prefix.children[j - 1].data.post_hint === "link" || prefix.children[j - 1].data.post_hint === undefined || prefix.children[j - 1].data.post_hint === "self" || prefix.children[j - 1].data.thumbnail === "nsfw" ) {
                 template.find("#thumbnail-post" + j).remove();
 
             } else {
