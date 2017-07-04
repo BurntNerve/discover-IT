@@ -136,7 +136,7 @@
 }
 
 .footer {
-    background-color: black;
+    background-color: white;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -149,15 +149,14 @@
     display: inline;
     position: relative;
     top: 16px;
+    color: #644a8d;
 }
 
 .footer img {
-    background-color: white;
     border-radius: 40%;
-    border: 2px solid black;
     padding: 2px;
     position: relative;
-    top:13px;
+    top:11px;
 }
 
 .footer a {
