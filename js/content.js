@@ -73,9 +73,14 @@ const CONTENT_SEARCH_SUBMIT = "#submit-submit";
 const CONTENT_SEARCH_CONTENT = "#submit-text";
 
 function handleInterestED() {
-    var loopCount;
+    //handleInterestED is the primary function of this program
+    //that runs all the subsequent functions
 
     function handleContentSubmit() {
+        //handleContentSubmit has an event listener that listens for the submission of the
+        //type of content the user wants to see and then calls the requisite functions
+        //in this case, getRedditData.
+
         $(CONTENT_SEARCH_SUBMIT).click(function(event) {
             event.preventDefault();
             var search_item = $(CONTENT_SEARCH_CONTENT).val();
@@ -86,6 +91,8 @@ function handleInterestED() {
     }
 
     function renderPanels(data) {
+        //renderPanels takes the information from getRedditData and, using the HTML_RESULTS_TEMPLATE,
+        //displays all the relevant Reddit api info on the page.
 
         var prefix = data.data;
         var subreddit_title = data.data.children[0].data.subreddit_name_prefixed;
@@ -93,7 +100,10 @@ function handleInterestED() {
         template.find("#section-title").text(subreddit_title);
 
         for (var j = 1; j < 5; j++) {
-
+            //This for loop is here so that it can do all the necessary changes to the posts which
+            //each have id names that are the same except for the the number that ends them
+            //hence the (".subreddit" + j) syntax.
+            
             template.find(".subreddit-link" + j).text("By u/" + prefix.children[j - 1].data.author);
             template.find(".subreddit-link" + j).attr("href", "https://reddit.com/user/" + prefix.children[j - 1].data.author);
             template.find(".subreddit-link" + j).attr("rel", "noreferrer noopener");
@@ -123,6 +133,8 @@ function handleInterestED() {
     }
 
     function getRedditData(item) {
+        //getRedditData calls the information from the API. This is the asynchronous 
+        //part of the app.
 
         reddit.subredditsByTopic(item).fetch(function(res) {
             for (var i = 0; i < res.length; i++) {
