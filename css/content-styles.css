@@ -8,6 +8,7 @@
     min-height: 100vh;
     margin-bottom: 0;
     color: white;
+    position: relative;
 }
 
 .jumbotron h2 {
@@ -132,6 +133,39 @@
 
 #section-title-link {
     color: white;
+}
+
+.footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    min-width: 100%;
+    text-align: center;
+}
+
+.footer h3 {
+    display: inline;
+    position: relative;
+    top: 16px;
+}
+
+.footer img {
+    background-color: white;
+    border-radius: 40%;
+    border: 2px solid black;
+    padding: 2px;
+    position: relative;
+    top:13px;
+}
+
+.footer a {
+    color: white;
+}
+
+.panel {
+    margin-bottom: 50px;
 }
 
 ::-webkit-input-placeholder {

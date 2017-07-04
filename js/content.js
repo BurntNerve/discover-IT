@@ -96,6 +96,8 @@ function handleInterestED() {
 
             template.find(".subreddit-link" + j).text("By u/" + prefix.children[j - 1].data.author);
             template.find(".subreddit-link" + j).attr("href", "https://reddit.com/user/" + prefix.children[j - 1].data.author);
+            template.find(".subreddit-link" + j).attr("rel", "noreferrer noopener");
+
 
             if (prefix.children[j - 1].data.post_hint === "link" || prefix.children[j - 1].data.post_hint === undefined || prefix.children[j - 1].data.post_hint === "self" || prefix.children[j - 1].data.thumbnail === "nsfw" ) {
                 template.find("#thumbnail-post" + j).remove();
@@ -115,6 +117,7 @@ function handleInterestED() {
         template.find("#section-title").text(subreddit_title);
         if(subreddit_title.length > 1) {
             template.find("#section-title-link").attr("href", "https://reddit.com/" + subreddit_title);
+            template.find("#section-title-link").attr("rel", "noreferrer noopener");
         }
         $("#content-holder").append(template);
     }
