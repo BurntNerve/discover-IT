@@ -84,9 +84,16 @@ function handleInterestED() {
         $(CONTENT_SEARCH_SUBMIT).click(function(event) {
             event.preventDefault();
             var search_item = $(CONTENT_SEARCH_CONTENT).val();
-            $(CONTENT_BOX).fadeOut(800);
-            $(CONTENT_BOX).remove();
-            getRedditData(search_item);
+            if (search_item === "") {
+                console.log("Buttin");
+                $(CONTENT_SEARCH_CONTENT).attr("placeholder", "You forgot to type something.");
+                handleContentSubmit();
+                $("#submit-text").focus();
+            } else {
+                $(CONTENT_BOX).fadeOut(800);
+                $(CONTENT_BOX).remove();
+                getRedditData(search_item);
+            }
         });
     }
 
