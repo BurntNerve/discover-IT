@@ -6,6 +6,7 @@
 .jumbotron {
     background-color: #000022;
     min-height: 100vh;
+    min-width: 100.1vw;
     margin-bottom: 0;
     color: white;
     position: relative;
@@ -175,7 +176,7 @@
 }
 
 .picture-and-search {
-    height: 550px;
+    height: 670px;
     min-width: 100.1vw;
     position: relative;
     right: 32px;
@@ -187,6 +188,37 @@
           background-size: cover;
     min-height: 100%;
 }
+
+.three-piece {
+    height: 600px;
+    min-width: 100.1vw;
+    background-color: white;
+    position: relative;
+    bottom: 125px;
+    right: 32px;
+    margin-bottom: -98px;
+    color: #000022;
+    text-align: center;
+    padding-top: 55px;
+}
+
+.three-piece h2 {
+    text-align: center;
+    font-size: 4vh;
+}
+
+.three-piece h1 {
+    font-size: 6vh;
+}
+
+.three-piece p {
+    font-size: 2vh;
+    margin-top: 20px;
+}
+
+
+
+
 
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
@@ -206,4 +238,26 @@
 :-moz-placeholder {
     /* Firefox 18- */
     color: white;
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 1024px) {
+    .three-piece {
+        width: 100.5vw;
+    }
+
+    .three-piece p {
+        font-size: 2.8vh;
+    }
+}
+
+@media only screen and (max-width: 412px) and (min-width: 322px) {
+    .three-piece {
+        padding-top: 25px;
+    }
+}
+
+@media only screen and (width: 1024px) {
+    .three-piece {
+        height: 47vh !important;
+    }
 }
