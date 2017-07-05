@@ -4,7 +4,7 @@
 
 
 .jumbotron {
-    background-color: #000022;
+    background-color: #684D90;
     min-height: 100vh;
     min-width: 100.1vw;
     margin-bottom: 0;
@@ -38,7 +38,7 @@
 }
 
 .logo-box a {
-    color: #000022;
+    color: #684D90;
 }
 
 .logo {
@@ -121,15 +121,23 @@
 }
 
 #submit-submit {
-    border: 1px solid white;
     position: relative;
     top: 30px;
-    background-color: white;
-    color: #000022;
-    font-size: 2vh;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    font-size: 2.1vh;
     border-radius: 4px;
     outline: 0;
     width: 15vw;
+    border: 1.2px solid white;
+    transition: background-color, .5s ease;
+    transition: border, .5s ease;
+}
+
+#submit-submit:hover {
+    background-color: #684D90;
+    color: white;
+    border: 1.2px solid #684D90;
 }
 
 .fancy-title {
@@ -157,7 +165,7 @@
     display: inline;
     position: relative;
     top: 16px;
-    color: #644a8d;
+    color: #684D90;
 }
 
 .footer img {
@@ -168,7 +176,7 @@
 }
 
 .footer a {
-    color: white;
+    color: #235789;
 }
 
 .panel {
@@ -197,7 +205,7 @@
     bottom: 125px;
     right: 32px;
     margin-bottom: -98px;
-    color: #000022;
+    color: #684D90;
     text-align: center;
     padding-top: 55px;
 }
@@ -214,6 +222,8 @@
 .three-piece p {
     font-size: 2vh;
     margin-top: 20px;
+    border-top: 1px solid #651FFF;
+    padding-top: 20px;
 }
 
 
