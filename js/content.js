@@ -90,8 +90,7 @@ function handleInterestED() {
                 handleContentSubmit();
                 $("#submit-text").focus();
             } else {
-                $(CONTENT_BOX).fadeOut(800);
-                $(CONTENT_BOX).remove();
+                $(CONTENT_SEARCH_CONTENT).val("");
                 getRedditData(search_item);
             }
         });
