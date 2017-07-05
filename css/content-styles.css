@@ -123,6 +123,7 @@
     display: block;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 #submit-submit {
@@ -213,7 +214,7 @@
     margin-bottom: -98px;
     color: #684D90;
     text-align: center;
-    padding-top: 55px;
+    padding-top: 55px;;
 }
 
 .three-piece h2 {
@@ -230,6 +231,7 @@
     margin-top: 20px;
     border-top: 1px solid #651FFF;
     padding-top: 20px;
+    font-weight: 300;
 }
 
 

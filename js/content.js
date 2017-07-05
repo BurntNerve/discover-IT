@@ -92,6 +92,7 @@ function handleInterestED() {
             } else {
                 $(CONTENT_SEARCH_CONTENT).val("");
                 getRedditData(search_item);
+                $(".omega-title").removeClass("hidden");
                  $('html, body').animate({
                 scrollTop: $('#content-holder').offset().top
             }, 2000);
@@ -133,7 +134,7 @@ function handleInterestED() {
 
         }
 
-        template.find("#section-title").text(subreddit_title);
+        template.find("#section-title").text("From " + subreddit_title);
         if(subreddit_title.length > 1) {
             template.find("#section-title-link").attr("href", "https://reddit.com/" + subreddit_title);
             template.find("#section-title-link").attr("rel", "noreferrer noopener");
