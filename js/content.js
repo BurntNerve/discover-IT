@@ -92,6 +92,9 @@ function handleInterestED() {
             } else {
                 $(CONTENT_SEARCH_CONTENT).val("");
                 getRedditData(search_item);
+                 $('html, body').animate({
+                scrollTop: $('#content-holder').offset().top
+            }, 2000);
             }
         });
     }
@@ -136,6 +139,7 @@ function handleInterestED() {
             template.find("#section-title-link").attr("rel", "noreferrer noopener");
         }
         $("#content-holder").append(template);
+
     }
 
     function getRedditData(item) {
