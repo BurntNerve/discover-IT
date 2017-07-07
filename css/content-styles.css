@@ -267,10 +267,6 @@
     .three-piece p {
         font-size: 1.5em;
     }
-
-    #content-holder {
-        height: 0;
-    }
 }
 
 @media only screen and (max-width: 412px) and (min-width: 322px) {
