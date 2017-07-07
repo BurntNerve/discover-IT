@@ -83,6 +83,7 @@ function handleInterestED() {
 
         $(CONTENT_SEARCH_SUBMIT).click(function(event) {
             event.preventDefault();
+            $("#content-holder").empty();
             var search_item = $(CONTENT_SEARCH_CONTENT).val();
             if (search_item === "") {
                 console.log("Buttin");
