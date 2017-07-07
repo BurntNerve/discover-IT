@@ -86,8 +86,7 @@ function handleInterestED() {
             $("#content-holder").empty();
             var search_item = $(CONTENT_SEARCH_CONTENT).val();
             if (search_item === "") {
-                console.log("Buttin");
-                $(CONTENT_SEARCH_CONTENT).attr("placeholder", "You forgot to type something.");
+    
                 handleContentSubmit();
                 $("#submit-text").focus();
             } else {
