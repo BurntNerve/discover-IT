@@ -11,6 +11,6 @@ specifically skills in asynchronous client-side app development.
 3. UX
   The web-app is meant to extremely streamlined. I tried to avoid adding unessecary buttons or distracting features. This
   imbues the page with a certain level of intuition by default. The background picture that you first see on initial load
-  ties lends itself to the simplistic color palette with stark solid colors.
+  lends itself to the simplistic color palette with stark solid colors.
   
 
